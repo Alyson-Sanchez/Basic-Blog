@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = 'en-us'>
+
+<head>
+    <meta charset="UTF-8"/>
+    <link ref = 'stylesheet' href="">
+    <title> Aly's Blog</title>
+</head>
+
+<body>
+
+    <h1 class="Title"> What's on your mind?</h1>
+    
+
+    <!-- The form makes all the text boxes. onSubmit calls the method 'uploadBlogPost' upon hitting the submit button-->
+    <form action="blog.html" onSubmit="JavaScript:uploadBlogPost(author.value,title.value,body.value)">
+        <label for="author"> Username</label><br>
+        <input type="text" id="author" name="author" placeholder="John Smith"><br>
+        <label for="title">Title</label><br>
+        <input type="text" id="title" name="title" placeholder="What am I called?"><br>
+        <label for="body">Content</label><br>
+        <input type="text" id="body" name="body" placeholder="What are you thinking about?"><br>
+        <input type="submit" value="Submit">
+        </form>
+
+        <script>
+            function submit() {
+                location.replace("blog.html");
+            }
+        </script>
+
+       <!-- <button onclick="submit()"> Submit Post </button>
+        <script>
+        function submit(){
+            location.replace("file:///C:/Users/Frog/bootcamp/homework/Basic-Blog/02-Challenge/Assets/blog.html")
+        }</script> -->
+
+ <script src="js\form.js"></script>
+
+</body>
+
+
+</html>
