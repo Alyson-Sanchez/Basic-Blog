@@ -1,4 +1,43 @@
-.Title{
-    font-size: 40%;
-    font-family:Arial, Helvetica, sans-serif;
+body {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10%;
+  }
+
+  .content {
+    border-top: double 10px;
+  }
+
+  .title{
+    width:fit-content;
+    margin-right: 0%;
+    display: inline-block;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+#body{
+    padding-right: 40%;
+    padding-bottom: 40%;
 }
+.img{
+    display: inline-block;
+    width: auto;
+}
+
+  .form {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    border-color: #000;
+    border-left: double 10px;
+    border-top: double 10%;
+    padding: 10%;
+    padding-top: 0%;
+    width: 29%;
+    align-content: center;
+  }
