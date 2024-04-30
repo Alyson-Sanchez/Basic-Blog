@@ -23,28 +23,28 @@ WHEN I submit the form,
 THEN blog post data is stored to localStorage. [CHECK]
 
 WHEN the form submits,
-THEN I am redirected to the posts page. [CHECK, TECHNICALLY LMAO. FIGURE OUT HOW TO GET FORM TO SHOW UP ON NEW PAGE]
+THEN I am redirected to the posts page. [CHECK}]
 
 WHEN I enter try to submit a form without a username, title, or content,
 THEN I am presented with a message that prompts me to complete the form.
 
 WHEN I view the posts page,
-THEN I am presented with a header, with a light mode/dark mode toggle, and a "Back" button.
+THEN I am presented with a header, with a light mode/dark mode toggle, and a "Back" button. [CHECK]
 
 WHEN I click the light mode/dark mode toggle,
 THEN the page content's styles update to reflect the selection.
 
 WHEN I click the "Back" button,
-THEN I am redirected back to the landing page where I can input more blog entries.
+THEN I am redirected back to the landing page where I can input more blog entries. [CHECK]
 
 WHEN I view the main content,
-THEN I am presented with a list of blog posts that are pulled from localStorage.
+THEN I am presented with a list of blog posts that are pulled from localStorage. [CHECK]
 
 WHEN I view localStorage,
-THEN I am presented with a JSON array of blog post objects, each including the post author's username, title of the post, and post's content.
+THEN I am presented with a JSON array of blog post objects, each including the post author's username, title of the post, and post's content. [CHECK]
 
 WHEN I take a closer look at a single blog entry in the list,
-THEN I can see the title, the content, and the author of the post.
+THEN I can see the title, the content, and the author of the post. [CHECK]
 
 WHEN I view the footer,
 THEN I am presented with a link to the developer's portfolio.

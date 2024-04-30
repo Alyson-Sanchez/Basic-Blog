@@ -46,26 +46,33 @@ function createParentDiv(){
    /* put internal fields: title, author, body */
    createUserPar(divEl);
    createTitlePar(divEl);
-   creatContentPar(divEl);
+   createContentPar(divEl);
   
    document.getElementById("exampleDiv").appendChild(divEl);
-   divEl.style.border = "thick solid #000";
-   divEl.style.marginBottom = "10px";
+  divEl.classList.add("postArea")
    return divEl;
-}
-
-function createUserPar(parentDiv){
-    var parEl = document.createElement("p");
-    parentDiv.appendChild(parEl);
-
 }
 
 function createTitlePar(parentDiv) {
     var parEl = document.createElement("p");
     parentDiv.appendChild(parEl);
+    console.log("hit");
+    parEl.classList.add("contentPost");
+
 }
 
-function creatContentPar(parentDiv) {
+function createContentPar(parentDiv) {
     var parEl = document.createElement("p");
     parentDiv.appendChild(parEl);
+    parEl.classList.add("userPost")
+}
+
+function createUserPar(parentDiv){
+    var parEl = document.createElement("p");
+    parEl.classList.add("titlePost");
+    parentDiv.appendChild(parEl);
+}
+
+function goBack(){
+    location.replace("index.html");
 }

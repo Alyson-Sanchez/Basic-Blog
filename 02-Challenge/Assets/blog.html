@@ -2,24 +2,41 @@
 <html lang="en-us">
 
     <meta charset="UTF-8">
-    <link ref ="stylesheet" href="blog.css">
+    <link rel ="stylesheet" href="css\blog.css">
+    <script src="https://kit.fontawesome.com/cfe3dacfaa.js" crossorigin="anonymous"></script>
     <title> Blog Wall</title>
-
-    <script src= "js\form.js" type="text/javascript"></script>
-    <script src ="js\blog.js" type="text/javascript"></script>
 
 
     <body onload = "formatBlogPost();">
-    <div>
-     <p id="loadObject"></P>
 
-     
-     </div>
+        <div class="header">
+            <button id="back" onclick= "goBack()"> Back</button>
+            <button class ='btn' id="day-night"onclick="darkMode()"><i class="fas fa-sun fa-xl" style="color: #ffcb3b;"></i></button>
+            <h2> My First Blog</h2>
+           
+        </div>
+       
+        <div>
+            <p id="loadObject"></P>
 
-     <div id="exampleDiv">
         
-     </div>
+        </div>
+
+        <div id="exampleDiv">
+            
+        </div>
+
+
+    <footer class="footer"> Made with <i class="fa-solid fa-heart fa-sm" style="color: #74C0FC;"></i> by Alyson</footer>
+    <footer class="footerInfo">
+        <p>Portfolio: https://alyson-sanchez.github.io/portfolio/  </a></p>
+        <p>Blog: Coqui0429's Blog</a></p>
+        <p>Email: coqui0429@gmail.com</p>
+    </footer>
     </body>
 
+<script src = "js\form.js" type="text/javascript"></script>
+<script src = "js\blog.js" type="text/javascript"></script>
+<script src = "js\logic.js" type = "text/javascript"></script>
 <script> loadBlogs()</script>
 </html>

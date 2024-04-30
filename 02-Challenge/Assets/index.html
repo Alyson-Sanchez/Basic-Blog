@@ -4,37 +4,52 @@
 <head>
     <meta charset="UTF-8"/>
     <link rel= 'stylesheet' href="css/styles.css"/>
+    <script src="https://kit.fontawesome.com/cfe3dacfaa.js" crossorigin="anonymous"></script>
     <title> Aly's Blog</title>
 </head>
 
 <body>
+    <div class="buttonIcon">
+     <button class ='btn' id="day-night"onclick="darkMode()"><i class="fas fa-sun fa-xl" style="color: #ffcb3b;"></i></button>
+    </div>
     <div class="content">
         <div class = "img">
-        <img id="sunset" src="vaporwave sunset.png" alt="A sunset with slats in the bottom, meant to mimmic the reflection of water" width="500">
+        <img id="sunset" src="images\vaporwave sunset.png" alt="A sunset with slats in the bottom, meant to mimmic the reflection of water" width="500">
         </div>
     
         <div class="form">
-            <h3> What's on your mind?</h3>
+            <h3 class = "intro"> What's on your mind?</h3>
             
             <!-- The form makes all the text boxes. onSubmit calls the method 'uploadBlogPost' upon hitting the submit button-->
-            <form action="blog.html" onSubmit="JavaScript:uploadBlogPost(author.value,title.value,body.value)">
+            <form action="blog.html" onSubmit="JavaScript:uploadBlogPost(author.value,title.value,content.value)">
                 <label for="author"> Username</label><br>
-                <input type="text" id="author" name="author"><br>
+                <input type="text" id="author" name="author" required><br>
                 <label for="title">Title</label><br>
-                <input type="text" id="title" name="title"><br>
-                <label for="body">Content</label><br>
-                <input type="text" id="body" name="body"><br>
-                <input type="submit" value="Submit">
+                <input type="text" id="title" name="title" required><br>
+                <label for="content">Content</label><br>
+                <textarea id="content" name="content" rows="2" cols="20" required></textarea><br>
+                <input type="submit" id = "submit" value="Submit">
             </form>
         </div>
-        
+
             <script>
                 function submit() {
-                    location.replace("blog.html");
+                    var author = document.getElementById("author").value;
+                    var title = document.getElementById("title").value;
+                    var content = document.getElementById("content").value;
+                    console.log(author, title, content)
+
+                    if (author == null || title == null || content == null){
+                        console.log("This isnt complete")
+                        window.alert("Please Complete Form!")
+                    }
+
+                    else {
+                        location.replace("blog.html");
+                    }
+                
                 }
             </script>
-
-            <toggle id="day-night"onclick="darkMode()"> Toggle Dark Mode </toggle>
         
             </a>
         </div>
