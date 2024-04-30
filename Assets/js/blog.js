@@ -74,5 +74,5 @@ function createUserPar(parentDiv){
 }
 
 function goBack(){
-    location.replace("index.html");
+    location.replace("../index.html");
 }

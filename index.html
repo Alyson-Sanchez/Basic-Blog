@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8"/>
-    <link rel= 'stylesheet' href="css/styles.css"/>
+    <link rel= 'stylesheet' href="Assets/css/styles.css"/>
     <script src="https://kit.fontawesome.com/cfe3dacfaa.js" crossorigin="anonymous"></script>
     <title> Aly's Blog</title>
 </head>
@@ -14,14 +14,14 @@
     </div>
     <div class="content">
         <div class = "img">
-        <img id="sunset" src="images\vaporwave sunset.png" alt="A sunset with slats in the bottom, meant to mimmic the reflection of water" width="500">
+        <img id="sunset" src="Assets/images\vaporwave sunset.png" alt="A sunset with slats in the bottom, meant to mimmic the reflection of water" width="500">
         </div>
     
         <div class="form">
             <h3 class = "intro"> What's on your mind?</h3>
             
             <!-- The form makes all the text boxes. onSubmit calls the method 'uploadBlogPost' upon hitting the submit button-->
-            <form action="blog.html" onSubmit="JavaScript:uploadBlogPost(author.value,title.value,content.value)">
+            <form action="Assets/blog.html" onSubmit="JavaScript:uploadBlogPost(author.value,title.value,content.value)">
                 <label for="author"> Username</label><br>
                 <input type="text" id="author" name="author" required><br>
                 <label for="title">Title</label><br>
